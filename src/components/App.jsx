@@ -41,7 +41,7 @@ class App extends Component {
   };
 
   checkName = data => {
-    return this.state.contacts.some(el => el.name === data.name);
+    return this.state.contacts.some(el => el.name.toLowerCase() === data.name.toLowerCase());
   };
 
   onContactDelete = evt => {
