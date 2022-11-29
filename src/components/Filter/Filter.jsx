@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
 const Filter = ({ filter, change }) => (
-  <label changeName={css.label}>
+  <label className={css.label}>
     Find contacts by name
     <input
       className={css.input}
